@@ -1,8 +1,7 @@
-/*David Laughton
+﻿/*David Laughton
 *may 20th 2019
 *Sees what quadrant (x,y) are in
 */
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +36,11 @@ namespace CulminatingProblemJ1QuadrantSelection
             int.TryParse(yValueInput.Text, out y);
             int.TryParse(xValueInput.Text, out x);
 
-            if (x > 0 && y > 0)
+            if (x == 0 || y == 0)
+            {
+                lblOutput.Content = "input can not be 0";
+            }
+            else if (x > 0 && y > 0)
             {
                 lblOutput.Content = "1";
             }
