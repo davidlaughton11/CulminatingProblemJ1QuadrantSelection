@@ -1,4 +1,9 @@
-﻿using System;
+/*David Laughton
+*may 20th 2019
+*Sees what quadrant (x,y) are in
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
