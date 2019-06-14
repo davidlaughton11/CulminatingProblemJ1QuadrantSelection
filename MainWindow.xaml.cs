@@ -31,11 +31,13 @@ namespace CulminatingProblemJ1QuadrantSelection
 
         private void Run_Click(object sender, RoutedEventArgs e)
         {
+            //int x and y inputs
             int x;
             int y;
             int.TryParse(yValueInput.Text, out y);
             int.TryParse(xValueInput.Text, out x);
-
+            
+            //inputs for all the possible places
             if (x == 0 || y == 0)
             {
                 lblOutput.Content = "input can not be 0";
